@@ -3,19 +3,25 @@
 //  CPO Swap
 //
 //  Created by Jaden Lee on 2023-07-29.
-//
+// an app where CPOs can swap shifts
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            PostShift()
+                .tabItem{
+                    Label("Post", systemImage: "square.and.pencil")
+                }
+            FindWork()
+                .tabItem{
+                    Label("Find Work", systemImage: "list.dash")
+                }
         }
-        .padding()
+        
     }
 }
 
