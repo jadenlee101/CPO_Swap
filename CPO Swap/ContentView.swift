@@ -4,11 +4,12 @@
 //
 //  Created by Jaden Lee on 2023-07-29.
 // an app where CPOs can swap shifts
+//features to add:
+//notification shift accepted, login
 
 import SwiftUI
 
 struct ContentView: View {
-    
     
     var body: some View {
         TabView{
@@ -21,7 +22,6 @@ struct ContentView: View {
                     Label("Find Work", systemImage: "list.dash")
                 }
         }
-        
     }
 }
 

@@ -9,7 +9,20 @@ import SwiftUI
 
 struct FindWork: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section{
+                    Text("shift here")
+                    Text("shift here")
+                    Text("shift here")
+                    
+                } header: {
+                    Text("Available shifts")
+                }
+                
+            }
+            .navigationTitle("Shift Exchange")
+        }
     }
 }
 

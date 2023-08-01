@@ -29,6 +29,7 @@ struct PostShift: View {
                 }
                 Section{
                     Text("Name:")
+                    Text("Phone:")
                     Text("Reg#:")
                 } header: {
                     Text("Your info")
