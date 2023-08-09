@@ -21,6 +21,10 @@ struct ContentView: View {
                 .tabItem{
                     Label("Find Work", systemImage: "list.dash")
                 }
+            Setting()
+                .tabItem{
+                    Label("Setting", systemImage: "gear")
+                }
         }
     }
 }

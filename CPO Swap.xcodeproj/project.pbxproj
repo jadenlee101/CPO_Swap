@@ -14,6 +14,7 @@
 		E0196EF82A75DF29006FD9A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0196EF72A75DF29006FD9A6 /* Preview Assets.xcassets */; };
 		E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196EFF2A75F200006FD9A6 /* PostShift.swift */; };
 		E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196F012A75F4F4006FD9A6 /* FindWork.swift */; };
+		E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196F032A83FE24006FD9A6 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E0196EF72A75DF29006FD9A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0196EFF2A75F200006FD9A6 /* PostShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostShift.swift; sourceTree = "<group>"; };
 		E0196F012A75F4F4006FD9A6 /* FindWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWork.swift; sourceTree = "<group>"; };
+		E0196F032A83FE24006FD9A6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,6 @@
 				53412E70628EABF2F051F79E /* Pods-CPO Swap.debug.xcconfig */,
 				152869044715594C5B003731 /* Pods-CPO Swap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +103,7 @@
 			children = (
 				E0196EFF2A75F200006FD9A6 /* PostShift.swift */,
 				E0196F012A75F4F4006FD9A6 /* FindWork.swift */,
+				E0196F032A83FE24006FD9A6 /* Setting.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,7 +119,7 @@
 				E0196EE92A75DF27006FD9A6 /* Sources */,
 				E0196EEA2A75DF27006FD9A6 /* Frameworks */,
 				E0196EEB2A75DF27006FD9A6 /* Resources */,
-				B413CD3748202F1B51578C1B /* [CP] Embed Pods Frameworks */,
+				1F5375B38A070A0F1EAB7A05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,7 +176,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B413CD3748202F1B51578C1B /* [CP] Embed Pods Frameworks */ = {
+		1F5375B38A070A0F1EAB7A05 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */,
 				E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */,
 				E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */,
 				E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */,

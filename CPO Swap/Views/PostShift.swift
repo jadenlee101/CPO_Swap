@@ -29,11 +29,19 @@ struct PostShift: View {
                 }
                 Section{
                     Text("Name:")
+                    Text("Email:")
                     Text("Phone:")
                     Text("Reg#:")
                 } header: {
                     Text("Your info")
                 }
+                Button{
+                    
+                } label: {
+                    
+                    Text("Submit")
+                }
+                
             }
             .navigationTitle("CPO Swap")
         }
