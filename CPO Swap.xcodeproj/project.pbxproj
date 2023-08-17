@@ -40,19 +40,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		486018AF04D471FE989E0F26 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E0196EE42A75DF27006FD9A6 = {
 			isa = PBXGroup;
 			children = (
 				E0196EEF2A75DF27006FD9A6 /* CPO Swap */,
 				E0196EEE2A75DF27006FD9A6 /* Products */,
-				486018AF04D471FE989E0F26 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
