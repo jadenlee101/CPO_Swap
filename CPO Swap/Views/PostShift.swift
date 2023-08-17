@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseFirestore
 
 struct PostShift: View {
     @State private var daySelected = Date.now
+    @State private var start: String = ""
+    
+    
+    //let db = Firestore.firestore()
     
     var body: some View {
         NavigationView {
@@ -20,13 +26,15 @@ struct PostShift: View {
                 } header: {
                     Text("Which day you need off")
                 }
+                
                 Section{
-                    Text("Start Time")
+                    TextField("Start Time", text: $start)
                     Text("End time")
-                    Text("Note:")
+                    Text("Note: your availability?")
                 } header: {
                     Text("Tell us about the shift")
                 }
+                
                 Section{
                     Text("Name:")
                     Text("Email:")

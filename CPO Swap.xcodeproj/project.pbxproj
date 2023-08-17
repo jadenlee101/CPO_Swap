@@ -15,6 +15,7 @@
 		E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196EFF2A75F200006FD9A6 /* PostShift.swift */; };
 		E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196F012A75F4F4006FD9A6 /* FindWork.swift */; };
 		E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196F032A83FE24006FD9A6 /* Setting.swift */; };
+		E0196F062A8ACA9E006FD9A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0196F052A8ACA9D006FD9A6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E0196EFF2A75F200006FD9A6 /* PostShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostShift.swift; sourceTree = "<group>"; };
 		E0196F012A75F4F4006FD9A6 /* FindWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWork.swift; sourceTree = "<group>"; };
 		E0196F032A83FE24006FD9A6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		E0196F052A8ACA9D006FD9A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E0196EFE2A75F1BB006FD9A6 /* Views */,
 				E0196EF02A75DF27006FD9A6 /* CPO_SwapApp.swift */,
 				E0196EF22A75DF27006FD9A6 /* ContentView.swift */,
+				E0196F052A8ACA9D006FD9A6 /* GoogleService-Info.plist */,
 				E0196EF42A75DF29006FD9A6 /* Assets.xcassets */,
 				E0196EF62A75DF29006FD9A6 /* Preview Content */,
 			);
@@ -170,6 +173,7 @@
 			files = (
 				E0196EF82A75DF29006FD9A6 /* Preview Assets.xcassets in Resources */,
 				E0196EF52A75DF29006FD9A6 /* Assets.xcassets in Resources */,
+				E0196F062A8ACA9E006FD9A6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +399,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseFirestore
+
 
 @main
 struct CPO_SwapApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
         }
