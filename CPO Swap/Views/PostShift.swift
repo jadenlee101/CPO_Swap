@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseFirestore
 
 struct PostShift: View {
     @State private var daySelected = Date.now

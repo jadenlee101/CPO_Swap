@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0AD30B808844ADE90102839 /* Pods_CPO_Swap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABF75E3FDDED27FE68143A9 /* Pods_CPO_Swap.framework */; };
 		E0196EF12A75DF27006FD9A6 /* CPO_SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196EF02A75DF27006FD9A6 /* CPO_SwapApp.swift */; };
 		E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0196EF22A75DF27006FD9A6 /* ContentView.swift */; };
 		E0196EF52A75DF29006FD9A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0196EF42A75DF29006FD9A6 /* Assets.xcassets */; };
@@ -19,9 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		152869044715594C5B003731 /* Pods-CPO Swap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPO Swap.release.xcconfig"; path = "Target Support Files/Pods-CPO Swap/Pods-CPO Swap.release.xcconfig"; sourceTree = "<group>"; };
-		53412E70628EABF2F051F79E /* Pods-CPO Swap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPO Swap.debug.xcconfig"; path = "Target Support Files/Pods-CPO Swap/Pods-CPO Swap.debug.xcconfig"; sourceTree = "<group>"; };
-		6ABF75E3FDDED27FE68143A9 /* Pods_CPO_Swap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPO_Swap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0196EED2A75DF27006FD9A6 /* CPO Swap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPO Swap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0196EF02A75DF27006FD9A6 /* CPO_SwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPO_SwapApp.swift; sourceTree = "<group>"; };
 		E0196EF22A75DF27006FD9A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0AD30B808844ADE90102839 /* Pods_CPO_Swap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +43,8 @@
 		486018AF04D471FE989E0F26 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53412E70628EABF2F051F79E /* Pods-CPO Swap.debug.xcconfig */,
-				152869044715594C5B003731 /* Pods-CPO Swap.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		87238628120132421C792F9B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6ABF75E3FDDED27FE68143A9 /* Pods_CPO_Swap.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E0196EE42A75DF27006FD9A6 = {
@@ -68,7 +53,6 @@
 				E0196EEF2A75DF27006FD9A6 /* CPO Swap */,
 				E0196EEE2A75DF27006FD9A6 /* Products */,
 				486018AF04D471FE989E0F26 /* Pods */,
-				87238628120132421C792F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,11 +102,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0196EFB2A75DF29006FD9A6 /* Build configuration list for PBXNativeTarget "CPO Swap" */;
 			buildPhases = (
-				D9737DFA657F1407FEF48738 /* [CP] Check Pods Manifest.lock */,
 				E0196EE92A75DF27006FD9A6 /* Sources */,
 				E0196EEA2A75DF27006FD9A6 /* Frameworks */,
 				E0196EEB2A75DF27006FD9A6 /* Resources */,
-				1F5375B38A070A0F1EAB7A05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,48 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1F5375B38A070A0F1EAB7A05 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CPO Swap/Pods-CPO Swap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CPO Swap/Pods-CPO Swap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CPO Swap/Pods-CPO Swap-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9737DFA657F1407FEF48738 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CPO Swap-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0196EE92A75DF27006FD9A6 /* Sources */ = {
@@ -353,7 +293,6 @@
 		};
 		E0196EFC2A75DF29006FD9A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53412E70628EABF2F051F79E /* Pods-CPO Swap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +323,6 @@
 		};
 		E0196EFD2A75DF29006FD9A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 152869044715594C5B003731 /* Pods-CPO Swap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
