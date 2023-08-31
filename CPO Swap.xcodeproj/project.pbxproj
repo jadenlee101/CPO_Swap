@@ -17,6 +17,7 @@
 		E094F7812A8EB9DF0077AC06 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E094F7802A8EB9DF0077AC06 /* FirebaseAuth */; };
 		E094F7832A8EB9DF0077AC06 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E094F7822A8EB9DF0077AC06 /* FirebaseFirestore */; };
 		E094F7852A8EBB220077AC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E094F7842A8EBB220077AC06 /* GoogleService-Info.plist */; };
+		E094F7892A95134D0077AC06 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7882A95134D0077AC06 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E0196F012A75F4F4006FD9A6 /* FindWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWork.swift; sourceTree = "<group>"; };
 		E0196F032A83FE24006FD9A6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		E094F7842A8EBB220077AC06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E094F7882A95134D0077AC06 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E0196EFF2A75F200006FD9A6 /* PostShift.swift */,
 				E0196F012A75F4F4006FD9A6 /* FindWork.swift */,
 				E0196F032A83FE24006FD9A6 /* Setting.swift */,
+				E094F7882A95134D0077AC06 /* Login.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */,
 				E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */,
 				E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */,
+				E094F7892A95134D0077AC06 /* Login.swift in Sources */,
 				E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */,
 				E0196EF12A75DF27006FD9A6 /* CPO_SwapApp.swift in Sources */,
 			);
