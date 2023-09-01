@@ -18,6 +18,7 @@
 		E094F7832A8EB9DF0077AC06 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E094F7822A8EB9DF0077AC06 /* FirebaseFirestore */; };
 		E094F7852A8EBB220077AC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E094F7842A8EBB220077AC06 /* GoogleService-Info.plist */; };
 		E094F7892A95134D0077AC06 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7882A95134D0077AC06 /* Login.swift */; };
+		E094F78C2AA1E23E0077AC06 /* PostShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E0196F032A83FE24006FD9A6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		E094F7842A8EBB220077AC06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E094F7882A95134D0077AC06 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostShiftViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		E0196EEF2A75DF27006FD9A6 /* CPO Swap */ = {
 			isa = PBXGroup;
 			children = (
+				E094F78A2AA1E2220077AC06 /* ViewModels */,
 				E0196EFE2A75F1BB006FD9A6 /* Views */,
 				E0196EF02A75DF27006FD9A6 /* CPO_SwapApp.swift */,
 				E0196EF22A75DF27006FD9A6 /* ContentView.swift */,
@@ -92,6 +95,14 @@
 				E094F7882A95134D0077AC06 /* Login.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E094F78A2AA1E2220077AC06 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 			files = (
 				E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */,
 				E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */,
+				E094F78C2AA1E23E0077AC06 /* PostShiftViewModel.swift in Sources */,
 				E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */,
 				E094F7892A95134D0077AC06 /* Login.swift in Sources */,
 				E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */,

@@ -9,14 +9,14 @@ import SwiftUI
 import FirebaseFirestore
 
 struct PostShift: View {
-    @State private var daySelected = Date.now
-    @State private var start: String = ""
     
+    @StateObject var viewModel = PostShiftViewModel()
+
     var body: some View {
         NavigationView {
             Form {
                 Section{
-                    DatePicker(selection: $daySelected, in: Date.now..., displayedComponents: .date) {
+                    DatePicker(selection: $viewModel.daySelected, in: Date.now..., displayedComponents: .date) {
                         Text("Select a date:")
                     }
                 } header: {
@@ -24,7 +24,7 @@ struct PostShift: View {
                 }
                 
                 Section{
-                    TextField("Start Time", text: $start)
+                    TextField("Start Time", text: $viewModel.start)
                     Text("End time")
                     Text("Note: your availability?")
                 } header: {
@@ -40,12 +40,11 @@ struct PostShift: View {
                     Text("Your info")
                 }
                 Button{
-                    submit(start : start)
+                    submit(start : viewModel.start)
                 } label: {
                     
                     Text("Submit")
                 }
-                
             }
             .navigationTitle("CPO Swap")
         }
