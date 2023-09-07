@@ -22,13 +22,13 @@ class PostShiftViewModel : ObservableObject {
     @Published var reg = ""
     @Published var phone = ""
     @Published var note = ""
-    
+    @Published var email = ""
     
     func submit (){
         
         //create model
         let newId = UUID().uuidString
-        let newShift = UserShift(firstName: firstName,lastName: lastName, reg: reg, phone: phone, id: newId, location: selectedLocation, day: daySelected.timeIntervalSince1970, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
+        let newShift = UserShift(firstName: firstName,lastName: lastName, reg: reg, phone: phone,email: email, id: newId, location: selectedLocation, day: daySelected.timeIntervalSince1970, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
         
         //save model
         let db = Firestore.firestore()

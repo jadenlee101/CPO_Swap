@@ -13,6 +13,7 @@ struct UserShift: Codable, Identifiable {
     let lastName : String
     let reg : String
     let phone : String
+    let email : String
     //Shift detail
     let id: String
     let location: String

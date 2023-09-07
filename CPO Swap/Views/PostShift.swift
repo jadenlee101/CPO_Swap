@@ -56,6 +56,11 @@ struct PostShift: View {
                         TextField("780123456", text: $viewModel.phone)
                     }
                     HStack{
+                        Text("Email:")
+                        TextField("", text: $viewModel.email)
+                            
+                    }
+                    HStack{
                         Text("Reg#:")
                         TextField("12345", text: $viewModel.reg)
                     }

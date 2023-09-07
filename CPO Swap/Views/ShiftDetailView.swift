@@ -44,6 +44,6 @@ struct ShiftDetailView: View {
 
 struct ShiftDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ShiftDetailView(shift: UserShift(firstName: "sef", lastName: "fsef", reg: "fsefs", phone: "fess", id: "fesfs", location: "fsef", day: Date().timeIntervalSince1970, start: Date().timeIntervalSince1970, end: Date().timeIntervalSince1970, note: "fssef", isSwapped: false))
+        ShiftDetailView(shift: UserShift(firstName: "sef", lastName: "fsef", reg: "fsefs", phone: "fess",email: "email@com", id: "fesfs", location: "fsef", day: Date().timeIntervalSince1970, start: Date().timeIntervalSince1970, end: Date().timeIntervalSince1970, note: "fssef", isSwapped: false))
     }
 }
