@@ -24,23 +24,37 @@ struct PostShift: View {
                 }
                 
                 Section{
-                    TextField("Start Time", text: $viewModel.start)
-                    Text("End time")
-                    Text("Note:")
+                    DatePicker("Start Time", selection: $viewModel.start, displayedComponents: .hourAndMinute)
+    
+                   
+                    DatePicker("End Time", selection: $viewModel.end, displayedComponents: .hourAndMinute)
+                    
+                    HStack{
+                        Text("Note:")
+                        TextField("e.g. Availability", text: $viewModel.note)
+                    }
                 } header: {
                     Text("Tell us about the shift")
                 }
                 
                 Section{
-                    Text("Name:")
-                    Text("Email:")
-                    Text("Phone:")
-                    Text("Reg#:")
+                    HStack{
+                        Text("Name:")
+                        TextField("John Doe", text: $viewModel.name)
+                    }
+                    HStack{
+                        Text("Phone:")
+                        TextField("780123456", text: $viewModel.phone)
+                    }
+                    HStack{
+                        Text("Reg#:")
+                        TextField("12345", text: $viewModel.reg)
+                    }
                 } header: {
                     Text("Your info")
                 }
                 Button{
-                   viewModel.submit(start : viewModel.start)
+                   viewModel.submit()
                 } label: {
                     
                     Text("Submit")

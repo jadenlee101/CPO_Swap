@@ -12,17 +12,24 @@ class PostShiftViewModel : ObservableObject {
     init(){
     }
     @Published var daySelected = Date.now
-    @Published var start = ""
+    @Published var start = Date()
+    @Published var end = Date()
     @Published var location = ""
+    @Published var name = ""
+    @Published var reg = ""
+    @Published var phone = ""
+    @Published var note = ""
     
-    func submit (start : String){
+    
+    func submit (){
         
         //create model
-        
+        let newId = UUID().uuidString
+        let newShift = UserShift(name: name, reg: reg, phone: phone, id: newId, location: location, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
         
         //save model
         let db = Firestore.firestore()
-        db.collection("start time").addDocument(data: ["start time" : start])
+        db.collection("shifts").document(newId).setData(newShift.asDictionary())
         { err in
             if let err = err {
                 print("Error adding document: \(err)")

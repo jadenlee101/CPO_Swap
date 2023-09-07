@@ -10,14 +10,14 @@ import Foundation
 struct UserShift: Codable, Identifiable {
     //User detail
     let name : String
-    let reg : Int
-    let phone : Int
-    
+    let reg : String
+    let phone : String
     //Shift detail
     let id: String
     let location: String
     let start : TimeInterval
     let end : TimeInterval
+    let note : String
     
     //Swap sucess
     var isSwapped : Bool
