@@ -9,6 +9,8 @@ import SwiftUI
 import FirebaseFirestore
 
 struct FindWork: View {
+    @StateObject var viewModel = FindWorkViewModel()
+    
     var body: some View {
         NavigationView {
             Form {

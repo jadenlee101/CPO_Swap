@@ -9,7 +9,8 @@ import Foundation
 
 struct UserShift: Codable, Identifiable {
     //User detail
-    let name : String
+    let firstName : String
+    let lastName : String
     let reg : String
     let phone : String
     //Shift detail

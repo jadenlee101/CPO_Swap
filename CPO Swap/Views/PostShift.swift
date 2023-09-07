@@ -24,6 +24,11 @@ struct PostShift: View {
                 }
                 
                 Section{
+                    Picker("Please choose a location", selection: $viewModel.selectedLocation) {
+                        ForEach(viewModel.locations, id: \.self) {
+                            Text($0)
+                        }
+                    }
                     DatePicker("Start Time", selection: $viewModel.start, displayedComponents: .hourAndMinute)
     
                    
@@ -39,8 +44,12 @@ struct PostShift: View {
                 
                 Section{
                     HStack{
-                        Text("Name:")
-                        TextField("John Doe", text: $viewModel.name)
+                        Text("First Name:")
+                        TextField("John", text: $viewModel.firstName)
+                    }
+                    HStack{
+                        Text("Last Name:")
+                        TextField("Doe", text: $viewModel.lastName)
                     }
                     HStack{
                         Text("Phone:")
@@ -59,6 +68,7 @@ struct PostShift: View {
                     
                     Text("Submit")
                 }
+                
             }
             .navigationTitle("CPO Swap")
         }

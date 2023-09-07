@@ -21,6 +21,7 @@
 		E094F78C2AA1E23E0077AC06 /* PostShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */; };
 		E094F78F2AA957890077AC06 /* UserShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F78E2AA957890077AC06 /* UserShift.swift */; };
 		E094F7922AA96EDA0077AC06 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7912AA96EDA0077AC06 /* Extentions.swift */; };
+		E094F7942AA97ED80077AC06 /* FindWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostShiftViewModel.swift; sourceTree = "<group>"; };
 		E094F78E2AA957890077AC06 /* UserShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShift.swift; sourceTree = "<group>"; };
 		E094F7912AA96EDA0077AC06 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWorkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */,
+				E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				E094F78C2AA1E23E0077AC06 /* PostShiftViewModel.swift in Sources */,
 				E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */,
 				E094F7892A95134D0077AC06 /* Login.swift in Sources */,
+				E094F7942AA97ED80077AC06 /* FindWorkViewModel.swift in Sources */,
 				E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */,
 				E0196EF12A75DF27006FD9A6 /* CPO_SwapApp.swift in Sources */,
 				E094F78F2AA957890077AC06 /* UserShift.swift in Sources */,

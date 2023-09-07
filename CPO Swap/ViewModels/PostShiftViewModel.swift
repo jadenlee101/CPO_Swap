@@ -11,11 +11,14 @@ import FirebaseFirestore
 class PostShiftViewModel : ObservableObject {
     init(){
     }
+    var locations = ["DMU", "ICC", "SW", "Ddiv", "Other"]
+    @Published var selectedLocation = ""
     @Published var daySelected = Date.now
     @Published var start = Date()
     @Published var end = Date()
     @Published var location = ""
-    @Published var name = ""
+    @Published var firstName = ""
+    @Published var lastName = ""
     @Published var reg = ""
     @Published var phone = ""
     @Published var note = ""
@@ -25,7 +28,7 @@ class PostShiftViewModel : ObservableObject {
         
         //create model
         let newId = UUID().uuidString
-        let newShift = UserShift(name: name, reg: reg, phone: phone, id: newId, location: location, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
+        let newShift = UserShift(firstName: firstName,lastName: lastName, reg: reg, phone: phone, id: newId, location: selectedLocation, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
         
         //save model
         let db = Firestore.firestore()
