@@ -6,25 +6,39 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 struct FindWork: View {
     @StateObject var viewModel = FindWorkViewModel()
+    @FirestoreQuery var shifts : [UserShift]
+    
+    init(){
+        self._shifts = FirestoreQuery(collectionPath: "shifts/")
+    }
     
     var body: some View {
         NavigationView {
-            Form {
-                Section{
-                    Text("shift here")
-                    Text("shift here")
-                    Text("shift here")
-                    
-                } header: {
-                    Text("Available shifts")
+            
+            VStack{
+                HStack{
+                    Spacer()
+                    Text("Location:")
+                        .font(.title2)
+                        .bold()
+                    Spacer()
+                    Text("Start time:")
+                        .font(.title2)
+                        .bold()
+                    Spacer()
                 }
                 
+                List(shifts) { shift in
+                    ShiftView(shift: shift)
+                }
+                .listStyle(PlainListStyle())
+                
+                
             }
-            .navigationTitle("Shift Exchange")
         }
     }
 }

@@ -11,8 +11,8 @@ import FirebaseFirestore
 class PostShiftViewModel : ObservableObject {
     init(){
     }
-    var locations = ["DMU", "ICC", "SW", "Ddiv", "Other"]
-    @Published var selectedLocation = ""
+    var locations = ["DMU", "ICC", "SW","Scona", "Ddiv", "Other"]
+    @Published var selectedLocation = "DMU"
     @Published var daySelected = Date.now
     @Published var start = Date()
     @Published var end = Date()

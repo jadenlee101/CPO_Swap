@@ -22,6 +22,11 @@
 		E094F78F2AA957890077AC06 /* UserShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F78E2AA957890077AC06 /* UserShift.swift */; };
 		E094F7922AA96EDA0077AC06 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7912AA96EDA0077AC06 /* Extentions.swift */; };
 		E094F7942AA97ED80077AC06 /* FindWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */; };
+		E094F7972AA983F90077AC06 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E094F7962AA983F90077AC06 /* FirebaseFirestoreSwift */; };
+		E094F7992AA987DC0077AC06 /* ShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7982AA987DC0077AC06 /* ShiftView.swift */; };
+		E094F79B2AA987EB0077AC06 /* ShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F79A2AA987EB0077AC06 /* ShiftViewModel.swift */; };
+		E094F79D2AA992570077AC06 /* ShiftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F79C2AA992570077AC06 /* ShiftDetailView.swift */; };
+		E094F79F2AA9926D0077AC06 /* ShiftDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F79E2AA9926D0077AC06 /* ShiftDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,10 @@
 		E094F78E2AA957890077AC06 /* UserShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShift.swift; sourceTree = "<group>"; };
 		E094F7912AA96EDA0077AC06 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWorkViewModel.swift; sourceTree = "<group>"; };
+		E094F7982AA987DC0077AC06 /* ShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftView.swift; sourceTree = "<group>"; };
+		E094F79A2AA987EB0077AC06 /* ShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewModel.swift; sourceTree = "<group>"; };
+		E094F79C2AA992570077AC06 /* ShiftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailView.swift; sourceTree = "<group>"; };
+		E094F79E2AA9926D0077AC06 /* ShiftDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,7 @@
 			files = (
 				E094F7812A8EB9DF0077AC06 /* FirebaseAuth in Frameworks */,
 				E094F7832A8EB9DF0077AC06 /* FirebaseFirestore in Frameworks */,
+				E094F7972AA983F90077AC06 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 			children = (
 				E0196EEF2A75DF27006FD9A6 /* CPO Swap */,
 				E0196EEE2A75DF27006FD9A6 /* Products */,
+				E094F7952AA983F90077AC06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,8 @@
 				E0196F012A75F4F4006FD9A6 /* FindWork.swift */,
 				E0196F032A83FE24006FD9A6 /* Setting.swift */,
 				E094F7882A95134D0077AC06 /* Login.swift */,
+				E094F7982AA987DC0077AC06 /* ShiftView.swift */,
+				E094F79C2AA992570077AC06 /* ShiftDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +123,8 @@
 			children = (
 				E094F78B2AA1E23E0077AC06 /* PostShiftViewModel.swift */,
 				E094F7932AA97ED80077AC06 /* FindWorkViewModel.swift */,
+				E094F79A2AA987EB0077AC06 /* ShiftViewModel.swift */,
+				E094F79E2AA9926D0077AC06 /* ShiftDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -128,6 +143,13 @@
 				E094F7912AA96EDA0077AC06 /* Extentions.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		E094F7952AA983F90077AC06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +171,7 @@
 			packageProductDependencies = (
 				E094F7802A8EB9DF0077AC06 /* FirebaseAuth */,
 				E094F7822A8EB9DF0077AC06 /* FirebaseFirestore */,
+				E094F7962AA983F90077AC06 /* FirebaseFirestoreSwift */,
 			);
 			productName = "CPO Swap";
 			productReference = E0196EED2A75DF27006FD9A6 /* CPO Swap.app */;
@@ -209,14 +232,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0196F042A83FE24006FD9A6 /* Setting.swift in Sources */,
+				E094F79B2AA987EB0077AC06 /* ShiftViewModel.swift in Sources */,
 				E0196F002A75F200006FD9A6 /* PostShift.swift in Sources */,
 				E094F78C2AA1E23E0077AC06 /* PostShiftViewModel.swift in Sources */,
 				E0196F022A75F4F4006FD9A6 /* FindWork.swift in Sources */,
+				E094F79D2AA992570077AC06 /* ShiftDetailView.swift in Sources */,
 				E094F7892A95134D0077AC06 /* Login.swift in Sources */,
+				E094F7992AA987DC0077AC06 /* ShiftView.swift in Sources */,
 				E094F7942AA97ED80077AC06 /* FindWorkViewModel.swift in Sources */,
 				E0196EF32A75DF27006FD9A6 /* ContentView.swift in Sources */,
 				E0196EF12A75DF27006FD9A6 /* CPO_SwapApp.swift in Sources */,
 				E094F78F2AA957890077AC06 /* UserShift.swift in Sources */,
+				E094F79F2AA9926D0077AC06 /* ShiftDetailViewModel.swift in Sources */,
 				E094F7922AA96EDA0077AC06 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +469,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E094F77F2A8EB9DF0077AC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		E094F7962AA983F90077AC06 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E094F77F2A8EB9DF0077AC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
