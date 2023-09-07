@@ -5,7 +5,8 @@
 //  Created by Jaden Lee on 2023-07-29.
 // an app where CPOs can swap shifts
 //features to add:
-//notification shift accepted, login
+// reset form after submit , delete security
+//notification shift accepted
 
 import SwiftUI
 

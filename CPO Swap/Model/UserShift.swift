@@ -16,6 +16,7 @@ struct UserShift: Codable, Identifiable {
     //Shift detail
     let id: String
     let location: String
+    let day : TimeInterval
     let start : TimeInterval
     let end : TimeInterval
     let note : String

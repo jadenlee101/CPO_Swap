@@ -17,7 +17,8 @@ struct ShiftView: View {
            Spacer()
             Text(shift.location).font(.title)
             Spacer()
-            Text("\(Date(timeIntervalSince1970: shift.start).formatted(date: .abbreviated, time: .shortened))")
+            Text("\(Date(timeIntervalSince1970: shift.day).formatted(date: .abbreviated, time: .omitted))")
+            Text("\(Date(timeIntervalSince1970: shift.start).formatted(date: .omitted, time: .shortened))")
             
             Spacer()
         }
@@ -28,6 +29,6 @@ struct ShiftView: View {
 
 struct ShiftView_Previews: PreviewProvider {
     static var previews: some View {
-        ShiftView(shift: .init(firstName: "222", lastName: "333", reg: "234", phone: "2323", id: "2342", location: "ICC", start: Date().timeIntervalSince1970, end: Date().timeIntervalSince1970, note: "feee", isSwapped: false))
+        ShiftView(shift: .init(firstName: "222", lastName: "333", reg: "234", phone: "2323", id: "2342", location: "ICC", day: Date().timeIntervalSince1970, start: Date().timeIntervalSince1970, end: Date().timeIntervalSince1970, note: "feee", isSwapped: false))
     }
 }
