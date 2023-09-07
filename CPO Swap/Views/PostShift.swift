@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
+
 
 struct PostShift: View {
     
     @StateObject var viewModel = PostShiftViewModel()
-
+    
     var body: some View {
         NavigationView {
             Form {
@@ -26,7 +26,7 @@ struct PostShift: View {
                 Section{
                     TextField("Start Time", text: $viewModel.start)
                     Text("End time")
-                    Text("Note: your availability?")
+                    Text("Note:")
                 } header: {
                     Text("Tell us about the shift")
                 }
@@ -40,7 +40,7 @@ struct PostShift: View {
                     Text("Your info")
                 }
                 Button{
-                    submit(start : viewModel.start)
+                   viewModel.submit(start : viewModel.start)
                 } label: {
                     
                     Text("Submit")
@@ -51,17 +51,7 @@ struct PostShift: View {
     }
 }
 
-private func submit (start : String){
-    let db = Firestore.firestore()
-    db.collection("start time").addDocument(data: ["start time" : start])
-    { err in
-        if let err = err {
-            print("Error adding document: \(err)")
-        } else {
-            print("Document added with ID:")
-        }
-    }
-}
+
 
 struct PostShift_Previews: PreviewProvider {
     static var previews: some View {
