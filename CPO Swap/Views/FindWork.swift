@@ -32,13 +32,18 @@ struct FindWork: View {
                     Spacer()
                 }
                 
-                List(shifts) { shift in
-                    ShiftView(shift: shift)
+                List(shifts, id: \.id) { shift in
+                    NavigationLink{
+                        ShiftDetailView()
+                    } label: {
+                        ShiftView(shift: shift)
+                    }
                 }
                 .listStyle(PlainListStyle())
                 
-                
             }
+            .navigationTitle("Shift Exchange")
+            
         }
     }
 }
