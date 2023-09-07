@@ -36,7 +36,7 @@ struct PostShift: View {
                     
                     HStack{
                         Text("Note:")
-                        TextField("e.g. Availability", text: $viewModel.note)
+                        TextEditor(text: $viewModel.note)
                     }
                 } header: {
                     Text("Tell us about the shift")
@@ -49,7 +49,7 @@ struct PostShift: View {
                     }
                     HStack{
                         Text("Last Name:")
-                        TextField("Doe", text: $viewModel.lastName)
+                        TextField("Doe (Required to delete the post)", text: $viewModel.lastName)
                     }
                     HStack{
                         Text("Phone:")
@@ -57,12 +57,12 @@ struct PostShift: View {
                     }
                     HStack{
                         Text("Email:")
-                        TextField("", text: $viewModel.email)
+                        TextField("Optional", text: $viewModel.email)
                             
                     }
                     HStack{
                         Text("Reg#:")
-                        TextField("12345", text: $viewModel.reg)
+                        TextField("12345 (Required to delete the post)", text: $viewModel.reg)
                     }
                 } header: {
                     Text("Your info")

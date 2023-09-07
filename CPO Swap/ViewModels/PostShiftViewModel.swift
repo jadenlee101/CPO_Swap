@@ -25,7 +25,9 @@ class PostShiftViewModel : ObservableObject {
     @Published var email = ""
     
     func submit (){
-        
+        guard validate else {
+            return
+        }
         //create model
         let newId = UUID().uuidString
         let newShift = UserShift(firstName: firstName,lastName: lastName, reg: reg, phone: phone,email: email, id: newId, location: selectedLocation, day: daySelected.timeIntervalSince1970, start: start.timeIntervalSince1970 , end: end.timeIntervalSince1970, note: note, isSwapped: false)
@@ -37,9 +39,26 @@ class PostShiftViewModel : ObservableObject {
             if let err = err {
                 print("Error adding document: \(err)")
             } else {
-                print("Document added with ID:")
+                print("Document added with ID: \(newId)")
             }
         }
+    }
+    
+    //validate for emtpy strings
+    var validate : Bool {
+        guard !lastName.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return false
+        }
+        guard !firstName.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return false
+        }
+        guard !phone.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return false
+        }
+        guard !reg.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return false
+        }
+        return true
     }
 }
 

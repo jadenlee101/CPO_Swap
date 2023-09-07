@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ShiftDetailView: View {
-    @StateObject var viewModel = ShiftDetailViewModel()
     let shift : UserShift
+    @StateObject var viewModel = ShiftDetailViewModel()
+    
     
     var body: some View {
         NavigationView{
@@ -26,18 +27,27 @@ struct ShiftDetailView: View {
                 Section{
                     Text("Name: \(shift.firstName)")
                     Text("Phone Number: \(shift.phone)")
+                    Text("Email: \(shift.email)")
                 } header: {
                     Text("Contact Detail:")
                 }
-                
-                Button{
-                    viewModel.delete(uid: shift.id)
-                } label: {
-                    Text("Delete")
+                Section {
+                    TextField("Enter Last Name", text: $viewModel.enteredLast)
+                    TextField("Enter Reg", text: $viewModel.enteredReg)
+                    Button{
+                        viewModel.delete(uid: shift.id, reg: shift.reg, last: shift.lastName)
+                    } label: {
+                        Text("Delete")
+                            .foregroundColor(.red)
+                    }
+                    Text(viewModel.DeleteerrorMessage)
                         .foregroundColor(.red)
+                    
                 }
+                
             }
             .navigationTitle(" \(Date(timeIntervalSince1970: shift.day).formatted(date: .abbreviated, time: .omitted))")
+            
         }
     }
 }

@@ -8,32 +8,20 @@
 import SwiftUI
 
 struct Setting: View {
+    @StateObject var viewModel = SettingViewModel()
+    
     var body: some View {
         NavigationView{
             Form{
-                Text("Email:")
-                Text("Username:")
-                Text("Reg#:")
-                Text("Phone:")
-                HStack{
-                    Button{
-                        
-                    } label: {
-                        Text("Sign out")
-                            .foregroundColor(.red)
-                    }
-                    Spacer()
-                    Button{
-                        
-                    } label: {
-                        Text("Change Password")
-                    }
+                Toggle("Notification", isOn: $viewModel.notification)
                     
-                }
             }
+            
             .navigationTitle("Setting")
         }
+            
     }
+    
 }
 
 struct Setting_Previews: PreviewProvider {
