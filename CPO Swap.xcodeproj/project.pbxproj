@@ -28,6 +28,7 @@
 		E094F79D2AA992570077AC06 /* ShiftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F79C2AA992570077AC06 /* ShiftDetailView.swift */; };
 		E094F79F2AA9926D0077AC06 /* ShiftDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F79E2AA9926D0077AC06 /* ShiftDetailViewModel.swift */; };
 		E094F7A12AAA4D560077AC06 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F7A02AAA4D560077AC06 /* SettingViewModel.swift */; };
+		E094F7A32AAA93F40077AC06 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E094F7A22AAA93F40077AC06 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E094F7A32AAA93F40077AC06 /* FirebaseMessaging in Frameworks */,
 				E094F7812A8EB9DF0077AC06 /* FirebaseAuth in Frameworks */,
 				E094F7832A8EB9DF0077AC06 /* FirebaseFirestore in Frameworks */,
 				E094F7972AA983F90077AC06 /* FirebaseFirestoreSwift in Frameworks */,
@@ -175,6 +177,7 @@
 				E094F7802A8EB9DF0077AC06 /* FirebaseAuth */,
 				E094F7822A8EB9DF0077AC06 /* FirebaseFirestore */,
 				E094F7962AA983F90077AC06 /* FirebaseFirestoreSwift */,
+				E094F7A22AAA93F40077AC06 /* FirebaseMessaging */,
 			);
 			productName = "CPO Swap";
 			productReference = E0196EED2A75DF27006FD9A6 /* CPO Swap.app */;
@@ -478,6 +481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E094F77F2A8EB9DF0077AC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		E094F7A22AAA93F40077AC06 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E094F77F2A8EB9DF0077AC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
