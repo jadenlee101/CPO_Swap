@@ -34,7 +34,7 @@ struct FindWork: View {
                 
                 List(shifts, id: \.id) { shift in
                     NavigationLink{
-                        ShiftDetailView()
+                        ShiftDetailView(shift: shift)
                     } label: {
                         ShiftView(shift: shift)
                     }

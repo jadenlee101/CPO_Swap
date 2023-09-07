@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+class ShiftDetailViewModel  : ObservableObject {
+    init(){
+        
+    }
+    
+    func delete(uid : String){
+        let db = Firestore.firestore()
+        db.collection("shifts").document(uid).delete()
+    }
+}
