@@ -23,6 +23,8 @@ class PostShiftViewModel : ObservableObject {
     @Published var phone = ""
     @Published var note = ""
     @Published var email = ""
+    @Published var message = ""
+    @Published var submitSucessMessage = ""
     
     func submit (){
         guard validate else {
@@ -40,25 +42,41 @@ class PostShiftViewModel : ObservableObject {
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(newId)")
+                self.message = "Your request has been submitted"
+                self.resetForm()
             }
         }
     }
     
     //validate for emtpy strings
     var validate : Bool {
-        guard !lastName.trimmingCharacters(in: .whitespaces).isEmpty else {
+        guard !firstName.trimmingCharacters(in: .whitespaces).isEmpty else {
+            self.message = "Please enter your first name"
             return false
         }
-        guard !firstName.trimmingCharacters(in: .whitespaces).isEmpty else {
+        guard !lastName.trimmingCharacters(in: .whitespaces).isEmpty else {
+            self.message = "Please enter your last name"
             return false
         }
         guard !phone.trimmingCharacters(in: .whitespaces).isEmpty else {
+            self.message = "Please enter your phone number"
             return false
         }
         guard !reg.trimmingCharacters(in: .whitespaces).isEmpty else {
+            self.message = "Please enter your reg number "
             return false
         }
+        
         return true
+    }
+    
+    func resetForm () {
+        self.firstName = ""
+        self.lastName = ""
+        self.phone = ""
+        self.reg = ""
+        self.email = ""
+        self.note = ""
     }
 }
 

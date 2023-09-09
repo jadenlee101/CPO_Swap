@@ -71,8 +71,14 @@ struct PostShift: View {
                    viewModel.submit()
                 } label: {
                     
-                    Text("Submit")
+                    HStack{
+                        Text("Submit")
+                        Spacer()
+                        Text(viewModel.message)
+                            .foregroundColor(.red)
+                    }
                 }
+                
                 
             }
             .navigationTitle("CPO Swap")
