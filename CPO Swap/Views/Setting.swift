@@ -7,13 +7,28 @@
 
 import SwiftUI
 
+
 struct Setting: View {
     @StateObject var viewModel = SettingViewModel()
     
     var body: some View {
         NavigationView{
             Form{
-                Toggle("Notification", isOn: $viewModel.notification)
+                Text("Noti permission: \(viewModel.hasPermission.description)")
+                Button {
+                                Task {
+                                    await viewModel.requestNotificationPermission()
+                                }
+                            } label: {
+                                Text("Request notification permission")
+                            }
+                            .padding()
+                            .buttonStyle(.bordered)
+                            .disabled(viewModel.hasPermission)
+                            .task {
+                                await viewModel.getAuthStatus()
+                            }
+                            
                     
             }
             

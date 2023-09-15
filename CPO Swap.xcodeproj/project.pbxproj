@@ -51,6 +51,8 @@
 		E094F79C2AA992570077AC06 /* ShiftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailView.swift; sourceTree = "<group>"; };
 		E094F79E2AA9926D0077AC06 /* ShiftDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailViewModel.swift; sourceTree = "<group>"; };
 		E094F7A02AAA4D560077AC06 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		E094F7A42AB3D22D0077AC06 /* CPO-Swap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CPO-Swap-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E094F7A52AB3D2360077AC06 /* CPO Swap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CPO Swap.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,8 @@
 		E0196EEF2A75DF27006FD9A6 /* CPO Swap */ = {
 			isa = PBXGroup;
 			children = (
+				E094F7A52AB3D2360077AC06 /* CPO Swap.entitlements */,
+				E094F7A42AB3D22D0077AC06 /* CPO-Swap-Info.plist */,
 				E094F7902AA96EC10077AC06 /* Other */,
 				E094F78D2AA957370077AC06 /* Model */,
 				E094F78A2AA1E2220077AC06 /* ViewModels */,
@@ -377,12 +381,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CPO Swap/CPO Swap.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CPO Swap/Preview Content\"";
 				DEVELOPMENT_TEAM = 3B42F4VULV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CPO-Swap-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,12 +413,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CPO Swap/CPO Swap.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CPO Swap/Preview Content\"";
 				DEVELOPMENT_TEAM = 3B42F4VULV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CPO-Swap-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

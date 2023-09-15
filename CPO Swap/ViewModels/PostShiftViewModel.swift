@@ -24,7 +24,7 @@ class PostShiftViewModel : ObservableObject {
     @Published var note = ""
     @Published var email = ""
     @Published var message = ""
-    @Published var submitSucessMessage = ""
+    //@Published var submitSucessMessage = ""
     
     func submit (){
         guard validate else {
