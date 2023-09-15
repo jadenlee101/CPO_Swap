@@ -14,22 +14,21 @@ struct Setting: View {
     var body: some View {
         NavigationView{
             Form{
-                Text("Noti permission: \(viewModel.hasPermission.description)")
-                Button {
-                                Task {
-                                    await viewModel.requestNotificationPermission()
-                                }
-                            } label: {
-                                Text("Request notification permission")
-                            }
-                            .padding()
-                            .buttonStyle(.bordered)
-                            .disabled(viewModel.hasPermission)
-                            .task {
-                                await viewModel.getAuthStatus()
-                            }
-                            
-                    
+                Text("Coming soon")
+//                Text("Noti permission: \(viewModel.hasPermission.description)")
+//                Button {
+//                    Task {
+//                        await viewModel.requestNotificationPermission()
+//                    }
+//                } label: {
+//                    Text("Request notification permission")
+//                }
+//                .padding()
+//                .buttonStyle(.bordered)
+//                .disabled(viewModel.hasPermission)
+//                .task {
+//                    await viewModel.getAuthStatus()
+//                }
             }
             
             .navigationTitle("Setting")
