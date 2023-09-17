@@ -14,8 +14,8 @@ class PostShiftViewModel : ObservableObject {
     var locations = ["DMU", "ICC", "SW","Scona", "Ddiv", "Other"]
     @Published var selectedLocation = "DMU"
     @Published var daySelected = Date.now
-    @Published var start = Date()
-    @Published var end = Date()
+    @Published var start = defaultStart
+    @Published var end = defaultEnd
     @Published var location = ""
     @Published var firstName = ""
     @Published var lastName = ""
@@ -25,6 +25,22 @@ class PostShiftViewModel : ObservableObject {
     @Published var email = ""
     @Published var message = ""
     //@Published var submitSucessMessage = ""
+    
+    static var defaultStart : Date {
+        var components = DateComponents()
+        components.hour = 5
+        components.minute = 0
+        
+        return Calendar.current.date(from: components) ?? Date.now
+    }
+    
+    static var defaultEnd : Date {
+        var components = DateComponents()
+        components.hour = 17
+        components.minute = 0
+        
+        return Calendar.current.date(from: components) ?? Date.now
+    }
     
     func submit (){
         guard validate else {
