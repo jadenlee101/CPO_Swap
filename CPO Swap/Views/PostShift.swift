@@ -30,9 +30,15 @@ struct PostShift: View {
                         }
                     }
                     DatePicker("Start Time", selection: $viewModel.start, displayedComponents: .hourAndMinute)
+                        .onAppear{
+                            UIDatePicker.appearance().minuteInterval = 30
+                        }
     
                    
                     DatePicker("End Time", selection: $viewModel.end, displayedComponents: .hourAndMinute)
+                        .onAppear{
+                            UIDatePicker.appearance().minuteInterval = 30
+                        }
                     
                     HStack{
                         Text("Note:")
